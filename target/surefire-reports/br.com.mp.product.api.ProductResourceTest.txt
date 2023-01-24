@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: br.com.mp.product.api.ProductResourceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.508 s <<< FAILURE! - in br.com.mp.product.api.ProductResourceTest
+testHelloEndpoint  Time elapsed: 0.012 s  <<< ERROR!
+java.lang.RuntimeException: 
+java.lang.RuntimeException: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor#build threw an exception: io.quarkus.deployment.configuration.ConfigurationError: Hibernate extension cannot guess the dialect as no database kind is specified by 'quarkus.datasource.db-kind'
+	at io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor.guessDialect(HibernateOrmProcessor.java:857)
+	at io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor.handleHibernateORMWithNoPersistenceXml(HibernateOrmProcessor.java:677)
+	at io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor.build(HibernateOrmProcessor.java:237)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.quarkus.deployment.ExtensionLoader$2.execute(ExtensionLoader.java:931)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:277)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2046)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1578)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1452)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:479)
+
+Caused by: java.lang.RuntimeException: 
+io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor#build threw an exception: io.quarkus.deployment.configuration.ConfigurationError: Hibernate extension cannot guess the dialect as no database kind is specified by 'quarkus.datasource.db-kind'
+	at io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor.guessDialect(HibernateOrmProcessor.java:857)
+	at io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor.handleHibernateORMWithNoPersistenceXml(HibernateOrmProcessor.java:677)
+	at io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor.build(HibernateOrmProcessor.java:237)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.quarkus.deployment.ExtensionLoader$2.execute(ExtensionLoader.java:931)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:277)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2046)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1578)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1452)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:479)
+
+Caused by: io.quarkus.builder.BuildException: 
+Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor#build threw an exception: io.quarkus.deployment.configuration.ConfigurationError: Hibernate extension cannot guess the dialect as no database kind is specified by 'quarkus.datasource.db-kind'
+	at io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor.guessDialect(HibernateOrmProcessor.java:857)
+	at io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor.handleHibernateORMWithNoPersistenceXml(HibernateOrmProcessor.java:677)
+	at io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor.build(HibernateOrmProcessor.java:237)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.quarkus.deployment.ExtensionLoader$2.execute(ExtensionLoader.java:931)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:277)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2046)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1578)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1452)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:479)
+
+Caused by: io.quarkus.deployment.configuration.ConfigurationError: Hibernate extension cannot guess the dialect as no database kind is specified by 'quarkus.datasource.db-kind'
+

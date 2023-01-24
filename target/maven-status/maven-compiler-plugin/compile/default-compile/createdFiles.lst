@@ -1,0 +1,3 @@
+br/com/mp/product/api/ProductResource.class
+br/com/mp/product/model/Product.class
+br/com/mp/product/repository/ProductRepository.class
